@@ -70,13 +70,13 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<i>Something went wrong</i> <b> <a href='https://t.me/LazyPrincessSupport'>CLICK HERE FOR SUPPORT </a></b>",
+                text="<i>Something went wrong</i> <b> <a href='https://t.me/KumarValimaiBot'>CLICK HERE FOR SUPPORT </a></b>",
                 
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
         chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/f2c253c5b0b747042cf4c.png",
+        photo ="https://graph.org/file/dc0c53f73304fdcf8858a.jpg",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
         reply_markup=buttonz)
 
@@ -103,7 +103,7 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await StreamBot.send_photo(
                 chat_id=message.chat.id,
-                photo="https://telegra.ph/file/f2c253c5b0b747042cf4c.png",
+                photo="https://graph.org/file/dc0c53f73304fdcf8858a.jpg",
                 Caption="**𝙹𝙾𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚃𝙾 𝚄𝚂𝙴 ᴛʜɪs Bᴏᴛ!**\n\n__Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ!__",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -128,8 +128,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/LazyDeveloperr")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/LazyDeveloperr/Lazy-Streamer-BOT")]
+                [InlineKeyboardButton("💁‍♂️ Owner", url="https://t.me/TG_Movies4u")],
+                [InlineKeyboardButton("💥 Source Code", url="https://t.me/TG_Movies4u")]
             ]
         )
     )
